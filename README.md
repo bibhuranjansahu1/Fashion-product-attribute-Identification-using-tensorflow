@@ -1,7 +1,7 @@
 # Fashion-product-attribute-Identification-using-tensorflow
 **Fashion Product attribute determination using Tensorflow:**
 
-![](RackMultipart20200719-4-1me2mz3_html_8a100adb3b277190.jpg)
+![](images/image002.jpg)
 
 **Business Case:**
 
@@ -59,7 +59,7 @@ Convolutional Neural Networks (CNNs) is the most popular neural network model be
 
 Consider a 256 x 256 image. CNN can efficiently scan it chunk by chunk — say, a 5 × 5 window. The 5 × 5 window slides along the image (usually left to right, and top to bottom), as shown below. How &quot;quickly&quot; it slides is called its stride length. For example, a stride length of 2 means the 5 × 5 sliding window moves by 2 pixels at a time until it spans the entire image.
 
-![](RackMultipart20200719-4-1me2mz3_html_e1b761d3c5008769.jpg)
+![](images/image003.jpg)
 
 A **convolution** is a weighted sum of the pixel values of the image, as the window slides across the whole image. Turns out, this convolution process throughout an image with a weight matrix produces another image (of the same size, depending on the convention). Convolving is the process of applying a convolution.
 
@@ -91,15 +91,15 @@ Refer to the Model Training and testing Notebook for code.
 
 We will be using Flask framework for building a basic user interface to interact with our model. We need to upload and image and derive its attribute. We will be having two forms each for upperwear and bottom wear clothing. Below is the Ui interface for this project.
 
-![](RackMultipart20200719-4-1me2mz3_html_32186b795643f99d.png)
+![](images/image004.jpg)
 
 **Testing the application:**
 
 We can test the application local by running the final python file. Below is the format where how the file is organized.
 
-![](RackMultipart20200719-4-1me2mz3_html_7d1b05b33173b4dc.png)
+![](images/image005.jpg)
 
-![](RackMultipart20200719-4-1me2mz3_html_dec27c085aad4227.png)
+![](images/image008.jpg)
 
 **Creating a docker file:**
 
@@ -107,15 +107,15 @@ Docker is an application that allows you to package your application in a contai
 
 In the Dockerfile above, we are using tensorflow2.11 as as our base image with alpine python, then we copy the contents of our current directory into the &quot;/app&quot; directory in the image. Then, we set the &quot;/app&quot; directory as our working directory. Meaning, all the commands we run in our image will be run from that location. We go ahead to use the RUN command to install our dependencies and then we use gunicorn to start our app inside a module called fashion.py.
 
-![](RackMultipart20200719-4-1me2mz3_html_ffa34b7bfc563f92.png)
+![](images/image010.jpg)
 
 Once Our docker Image is ready. We need to push the docker image to dockerhub repository.
 
-![](RackMultipart20200719-4-1me2mz3_html_470e2d4884035ccf.png)
+![](images/image011.jpg)
 
 Once our Docker Image file is ready, we run our image by using the following command:
 
-![](RackMultipart20200719-4-1me2mz3_html_c95d7fd22bb19fb8.png)
+![](images/image014.jpg)
 
 **Deploying project to production:**
 
@@ -133,19 +133,19 @@ Once compute engine VM is created. Open the GCP SDK terminal and launch the VM. 
 
 Then Run the docker image.
 
-![](RackMultipart20200719-4-1me2mz3_html_c95d7fd22bb19fb8.png)
+![](images/image022.jpg)
 
 Open the external exposed url in your browser.
 
-![](RackMultipart20200719-4-1me2mz3_html_32186b795643f99d.png)
+![](images/image024.jpg)
 
 Upload the image for upper wear
 
-![](RackMultipart20200719-4-1me2mz3_html_4dc2ce5caf11ff37.png)
+![](images/image025.jpg)
 
 Below is the output
 
-![](RackMultipart20200719-4-1me2mz3_html_7b870ad9f36530c1.png)
+![](images/image027.jpg)
 
 Now lets upload an image for buttom wear
 
