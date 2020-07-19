@@ -125,15 +125,15 @@ We will be using Google cloud platform compute engine to deploy our docker and h
 
 ![](RackMultipart20200719-4-1me2mz3_html_e93b158d4cced813.png)
 
-Once compute engine VM is created. Open the GCP SDK terminal and launch the VM. Pull the docker form dockerhub repository.
+Once compute engine VM is created. Open the GCP SDK terminal and launch the VM. Pull the docker form dockerhub repository(docker.io/bibhumlai/fashion:second).
 
-![](RackMultipart20200719-4-1me2mz3_html_e755732baa00f6d3.png)
+![](images/image020.jpg)
 
-![](RackMultipart20200719-4-1me2mz3_html_6cd43ac46c717426.png)
+![](images/image021.jpg)
 
 Then Run the docker image.
 
-![](images/image022.jpg)
+![](images/image023.jpg)
 
 Open the external exposed url in your browser.
 
@@ -141,16 +141,16 @@ Open the external exposed url in your browser.
 
 Upload the image for upper wear
 
-![](images/image025.jpg)
+![](images/image026.jpg)
 
 Below is the output
 
-![](images/image027.jpg)
+![](images/image028.jpg)
 
 Now lets upload an image for buttom wear
 
-![](RackMultipart20200719-4-1me2mz3_html_cd74e23f92077b87.png)
+![](images/image030.jpg)
 
 Below is the the output
 
-![](RackMultipart20200719-4-1me2mz3_html_c8564df9de749070.png)
+![](images/image032.jpg)
